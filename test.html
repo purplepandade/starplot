@@ -1,0 +1,35 @@
+<button style="font-size: 5rem;" onClick=gen()>
+ABSENDEN
+</button>
+
+<script>
+    let data = {
+        lat: 33.363484,
+        lon: -116.836394,
+        dev:true,
+        location: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr \n sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    };
+    async function gen(){
+        try {
+    const config = {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+    }
+    const response = await fetch("http://127.0.0.1:5000/img", config)
+    const json = await response.json()
+    if (response.ok) {
+        console.log(json);
+        let file = "http://127.0.0.1:5000/" + json.image_path;
+        //window.open(file, '_blank');
+    } else {
+        //
+    }
+} catch (error) {
+        console.log(error);
+}
+    }
+</script>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titel</title>
+  </head>
+
+  <style>
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html,body{
+    /*A3*/
+    height:420mm;
+    width:297mm;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+body{
+    background-color: white;
+    position: relative;
+}
+
+.svg{
+    padding-top: 10mm;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+svg{
+    max-width: 100%;
+    height: auto;
+}
+
+.content{
+    padding-top: 10mm;
+    font-family: "Poppins", sans-serif;
+}
+
+.bold-text{
+    font-size: 17mm;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 10mm;
+}
+
+.single{
+    max-width: 70%;
+    line-height: 1.1;
+    font-size: 9mm;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.name-holder{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10mm;
+    font-size: 12mm;
+    font-weight: 300;
+    padding: 10mm;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+  </style>
+
+<body>
+<div data-svg id="svg" class="svg">
+    [svg]
+</div>
+
+<div class="content">
+<div data-heading id="heading" class="bold-text">
+</div>
+<div data-single id="single" class="single">
+
+</div>
+
+<div class="name-holder">
+    <div id="name1" data-name1></div>
+    <div id="name2" data-name2></div>
+</div>
+
+</div>
+
+  </body>
+</html>

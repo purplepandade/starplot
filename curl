@@ -1,0 +1,1 @@
+curl -X POST -H "Content-Type: application/json" -d '{"lat": 33.363484, "lon": -116.836394, "dev":true}' http://localhost:5000/genImg
